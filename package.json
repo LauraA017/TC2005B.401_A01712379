@@ -11,11 +11,12 @@
     "url": "git+https://github.com/LauraA017/TC2005B.401_A01712379.git"
   },
   "license": "ISC",
-  "author": "Laua CIntora ",
+  "author": "Laura CIntora ",
   "type": "commonjs",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch app1.js"
   },
   "dependencies": {
     "express": "^5.2.1"
