@@ -7,21 +7,21 @@
 <style>
 
 body{
-    font-family: Arial, sans-serif;
-    text-align:center;
-    background-image: url("Imageeennn1.png"); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    font-family: Arial, sans-serif; /* fuente o tipo de letra */
+    text-align:center; /* alinea el texto */
+    background-image: url("Imageeennn1.png"); /* imagen de fondo */
+    background-size: cover; /* se ajusta para cubrir toda la pantalla sin deformarse */
+    background-position: center; /* posición de la imagen de fondo dentro del contenedor */
+    background-repeat: no-repeat; /* imagen de fondo se repite cuando no cubre todo el espacio */
+    min-height: 100vh; /* efine la altura mínima del contenedor  */
+    display: flex; /*  */
+    flex-direction: column; 
 }
 
 #titulo{
     font-size: 40px;
     font-weight: bold;
-    color: #222;
+    color: white;
     margin-top: 40px;
     transition: all 0.4s ease;
 }
@@ -81,7 +81,7 @@ footer ul{
 footer h3{
     font-size: 16px;   /* Más pequeño */
     font-weight: normal;
-    color: #444;
+    color: black;
 }
 
 footer a{
@@ -151,19 +151,19 @@ titulo.addEventListener("click", function(){
 
     if(estilo === 0){
         titulo.style.fontFamily = "Arial, sans-serif";
-        titulo.style.color = "#222";
+        titulo.style.color = "white";
         titulo.style.fontSize = "40px";
     }
 
     if(estilo === 1){
         titulo.style.fontFamily = "Georgia, serif";
-        titulo.style.color = "#555";
+        titulo.style.color = "white";
         titulo.style.fontSize = "55px";
     }
 
     if(estilo === 2){
         titulo.style.fontFamily = "Courier New, monospace";
-        titulo.style.color = "#999";
+        titulo.style.color = "white";
         titulo.style.fontSize = "70px";
     }
 
@@ -215,4 +215,4 @@ document.getElementById("validar").addEventListener("click", function(){
 
 </body>
 </html>
- s
+ 
