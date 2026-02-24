@@ -1,9 +1,6 @@
 const express = require('express');
 const router = express.Router();
 
-
-
-
 const personajes = [
     {
         nombre: "Gwen",
@@ -52,7 +49,7 @@ const html_header = `
   <section class="section">
     <div class="container">
       <h1 class="title">
-        <a href="/">League of Legends</a>
+        <a href="/personajes">League of Legends</a>
       </h1>
         <p class="subtitle">
             My first website with <strong>Bulma</strong>!
@@ -66,7 +63,7 @@ const html_footer = `
 `;
 
 const html_form = `
-    <form action="/new" method="POST">
+    <form action="/personajes/new" method="POST">
         <div class="field">
             <label for="nombre" class="label">Nombre</label>
             <div class="control">
@@ -113,11 +110,11 @@ router.post('/new', (request, response, next) => {
     console.log(request.body);
     personajes.push(request.body);
     response.send(html_header + html_form + html_footer);
-});
+})
 
 router.use((request, response, next) => {
     let html_index = `
-            <a class="button is-primary" href="/new">Nuevo personaje</a>
+            <a class="button is-primary" href="/personajes/new">Nuevo personaje</a>
             <div class="columns">
         `;
 
@@ -141,5 +138,5 @@ router.use((request, response, next) => {
     response.send(html_header + html_index + html_footer); //Manda la respuesta
 });
 
-module.exports = router;
 
+module.exports = router;
